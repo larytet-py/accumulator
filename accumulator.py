@@ -39,7 +39,8 @@ class Accumulator():
         current = self.current
         if self.total < self.size:
             current = 0
-        for value in self.values:            
+        for i in range(self.size):
+            value = self.values[current]
             if not average:
                 s  += str_format.format(value)
             else:
